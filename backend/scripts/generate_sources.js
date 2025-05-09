@@ -20,7 +20,7 @@ files.forEach(file => {
         sources.push({
             name,
             type: 'gltfModel',
-            path: `/models/toycar/${file}`
+            path: `/models/toycar2/${file}`
         });
     }
 });

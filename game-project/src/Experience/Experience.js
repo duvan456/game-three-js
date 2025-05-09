@@ -210,7 +210,7 @@ export default class Experience {
 
     this.socketManager?.update()
     //linea para activar el debugger
-    if (this.debugger) this.debugger.update()
+    //if (this.debugger) this.debugger.update()
   }
 
   adjustCameraForVR() {
