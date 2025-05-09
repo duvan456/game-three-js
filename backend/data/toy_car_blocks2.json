@@ -1,0 +1,1325 @@
+[
+    {
+        "name": "wall.008_lev2",
+        "x": 1.5,
+        "y": 0.0,
+        "z": -5.25,
+        "level": 2
+    },
+    {
+        "name": "wall.009_lev2",
+        "x": 2.5,
+        "y": 0.0,
+        "z": -5.25,
+        "level": 2
+    },
+    {
+        "name": "floor.014_lev2",
+        "x": -0.5,
+        "y": 0.0,
+        "z": 3.5,
+        "level": 2
+    },
+    {
+        "name": "floor.015_lev2",
+        "x": 3.5,
+        "y": 0.0,
+        "z": 4.5,
+        "level": 2
+    },
+    {
+        "name": "floor.016_lev2",
+        "x": -0.5,
+        "y": 0.0,
+        "z": 4.5,
+        "level": 2
+    },
+    {
+        "name": "floor.017_lev2",
+        "x": 1.5,
+        "y": 0.0,
+        "z": 4.5,
+        "level": 2
+    },
+    {
+        "name": "floor.018_lev2",
+        "x": 2.5,
+        "y": 0.0,
+        "z": 4.5,
+        "level": 2
+    },
+    {
+        "name": "floor.019_lev2",
+        "x": 4.5,
+        "y": 0.0,
+        "z": 4.5,
+        "level": 2
+    },
+    {
+        "name": "floor.020_lev2",
+        "x": 1.5,
+        "y": 0.0,
+        "z": 3.5,
+        "level": 2
+    },
+    {
+        "name": "floor.021_lev2",
+        "x": 2.5,
+        "y": 0.0,
+        "z": 3.5,
+        "level": 2
+    },
+    {
+        "name": "floor.022_lev2",
+        "x": 3.5,
+        "y": 0.0,
+        "z": 3.5,
+        "level": 2
+    },
+    {
+        "name": "floor.023_lev2",
+        "x": 4.5,
+        "y": 0.0,
+        "z": 3.5,
+        "level": 2
+    },
+    {
+        "name": "floor.003_lev2",
+        "x": -0.5,
+        "y": 0.0,
+        "z": 2.5,
+        "level": 2
+    },
+    {
+        "name": "floor.008_lev2",
+        "x": 2.5,
+        "y": 0.0,
+        "z": 2.5,
+        "level": 2
+    },
+    {
+        "name": "floor.009_lev2",
+        "x": 3.5,
+        "y": 0.0,
+        "z": 2.5,
+        "level": 2
+    },
+    {
+        "name": "floor.010_lev2",
+        "x": 4.5,
+        "y": 0.0,
+        "z": 2.5,
+        "level": 2
+    },
+    {
+        "name": "floor.011_lev2",
+        "x": 1.5,
+        "y": 0.0,
+        "z": 1.5,
+        "level": 2
+    },
+    {
+        "name": "floor.012_lev2",
+        "x": 2.5,
+        "y": 0.0,
+        "z": 1.5,
+        "level": 2
+    },
+    {
+        "name": "floor.013_lev2",
+        "x": 3.5,
+        "y": 0.0,
+        "z": 1.5,
+        "level": 2
+    },
+    {
+        "name": "floor.024_lev2",
+        "x": 4.5,
+        "y": 0.0,
+        "z": 1.5,
+        "level": 2
+    },
+    {
+        "name": "floor.025_lev2",
+        "x": 1.5,
+        "y": 0.0,
+        "z": 0.5,
+        "level": 2
+    },
+    {
+        "name": "floor.026_lev2",
+        "x": 2.5,
+        "y": 0.0,
+        "z": 0.5,
+        "level": 2
+    },
+    {
+        "name": "floor.027_lev2",
+        "x": 3.5,
+        "y": 0.0,
+        "z": 0.5,
+        "level": 2
+    },
+    {
+        "name": "floor.028_lev2",
+        "x": 4.5,
+        "y": 0.0,
+        "z": 0.5,
+        "level": 2
+    },
+    {
+        "name": "floor.029_lev2",
+        "x": 1.5,
+        "y": 0.0,
+        "z": -0.5,
+        "level": 2
+    },
+    {
+        "name": "floor.030_lev2",
+        "x": 2.5,
+        "y": 0.0,
+        "z": -0.5,
+        "level": 2
+    },
+    {
+        "name": "floor.031_lev2",
+        "x": 3.5,
+        "y": 0.0,
+        "z": -0.5,
+        "level": 2
+    },
+    {
+        "name": "floor.032_lev2",
+        "x": 4.5,
+        "y": 0.0,
+        "z": -0.5,
+        "level": 2
+    },
+    {
+        "name": "floor.033_lev2",
+        "x": 1.5,
+        "y": 0.0,
+        "z": -1.5,
+        "level": 2
+    },
+    {
+        "name": "floor.034_lev2",
+        "x": 1.5,
+        "y": 0.0,
+        "z": -2.5,
+        "level": 2
+    },
+    {
+        "name": "floor.035_lev2",
+        "x": 1.5,
+        "y": 0.0,
+        "z": -3.5,
+        "level": 2
+    },
+    {
+        "name": "floor.036_lev2",
+        "x": 1.5,
+        "y": 0.0,
+        "z": -4.5,
+        "level": 2
+    },
+    {
+        "name": "floor.037_lev2",
+        "x": 2.5,
+        "y": 0.0,
+        "z": -4.5,
+        "level": 2
+    },
+    {
+        "name": "floor.038_lev2",
+        "x": 2.5,
+        "y": 0.0,
+        "z": -3.5,
+        "level": 2
+    },
+    {
+        "name": "floor.039_lev2",
+        "x": 2.5,
+        "y": 0.0,
+        "z": -2.5,
+        "level": 2
+    },
+    {
+        "name": "floor.040_lev2",
+        "x": 2.5,
+        "y": 0.0,
+        "z": -1.5,
+        "level": 2
+    },
+    {
+        "name": "floor.041_lev2",
+        "x": 3.5,
+        "y": 0.0,
+        "z": -4.5,
+        "level": 2
+    },
+    {
+        "name": "floor.042_lev2",
+        "x": 3.5,
+        "y": 0.0,
+        "z": -3.5,
+        "level": 2
+    },
+    {
+        "name": "floor.043_lev2",
+        "x": 3.5,
+        "y": 0.0,
+        "z": -2.5,
+        "level": 2
+    },
+    {
+        "name": "floor.044_lev2",
+        "x": 3.5,
+        "y": 0.0,
+        "z": -1.5,
+        "level": 2
+    },
+    {
+        "name": "floor.045_lev2",
+        "x": 4.5,
+        "y": 0.0,
+        "z": -4.5,
+        "level": 2
+    },
+    {
+        "name": "floor.046_lev2",
+        "x": 4.5,
+        "y": 0.0,
+        "z": -3.5,
+        "level": 2
+    },
+    {
+        "name": "floor.047_lev2",
+        "x": 4.5,
+        "y": 0.0,
+        "z": -2.5,
+        "level": 2
+    },
+    {
+        "name": "floor.048_lev2",
+        "x": 4.5,
+        "y": 0.0,
+        "z": -1.5,
+        "level": 2
+    },
+    {
+        "name": "floor.049_lev2",
+        "x": -0.5,
+        "y": 0.0,
+        "z": -4.5,
+        "level": 2
+    },
+    {
+        "name": "floor.050_lev2",
+        "x": -0.5,
+        "y": 0.0,
+        "z": -3.5,
+        "level": 2
+    },
+    {
+        "name": "floor.051_lev2",
+        "x": -0.5,
+        "y": 0.0,
+        "z": -2.5,
+        "level": 2
+    },
+    {
+        "name": "floor.052_lev2",
+        "x": -0.5,
+        "y": 0.0,
+        "z": -1.5,
+        "level": 2
+    },
+    {
+        "name": "floor.005_lev2",
+        "x": -1.5,
+        "y": 0.0,
+        "z": -1.5,
+        "level": 2
+    },
+    {
+        "name": "floor.053_lev2",
+        "x": -2.5,
+        "y": 0.0,
+        "z": -2.5,
+        "level": 2
+    },
+    {
+        "name": "floor.054_lev2",
+        "x": -1.5,
+        "y": 0.0,
+        "z": -3.5,
+        "level": 2
+    },
+    {
+        "name": "floor.055_lev2",
+        "x": -1.5,
+        "y": 0.0,
+        "z": -4.5,
+        "level": 2
+    },
+    {
+        "name": "floor.056_lev2",
+        "x": -1.5,
+        "y": 0.0,
+        "z": 4.5,
+        "level": 2
+    },
+    {
+        "name": "floor.057_lev2",
+        "x": -1.5,
+        "y": 0.0,
+        "z": 3.5,
+        "level": 2
+    },
+    {
+        "name": "floor.058_lev2",
+        "x": -0.5,
+        "y": 0.0,
+        "z": 0.5,
+        "level": 2
+    },
+    {
+        "name": "floor.059_lev2",
+        "x": -1.5,
+        "y": 0.0,
+        "z": -0.5,
+        "level": 2
+    },
+    {
+        "name": "floor.060_lev2",
+        "x": -1.5,
+        "y": 0.0,
+        "z": 2.5,
+        "level": 2
+    },
+    {
+        "name": "floor.061_lev2",
+        "x": -0.5,
+        "y": 0.0,
+        "z": 1.5,
+        "level": 2
+    },
+    {
+        "name": "floor.062_lev2",
+        "x": -2.5,
+        "y": 0.0,
+        "z": -1.5,
+        "level": 2
+    },
+    {
+        "name": "floor.063_lev2",
+        "x": -1.5,
+        "y": 0.0,
+        "z": -2.5,
+        "level": 2
+    },
+    {
+        "name": "floor.064_lev2",
+        "x": -2.5,
+        "y": 0.0,
+        "z": -3.5,
+        "level": 2
+    },
+    {
+        "name": "floor.065_lev2",
+        "x": -2.5,
+        "y": 0.0,
+        "z": -4.5,
+        "level": 2
+    },
+    {
+        "name": "floor.066_lev2",
+        "x": -2.5,
+        "y": 0.0,
+        "z": 4.5,
+        "level": 2
+    },
+    {
+        "name": "floor.067_lev2",
+        "x": -2.5,
+        "y": 0.0,
+        "z": 3.5,
+        "level": 2
+    },
+    {
+        "name": "floor.068_lev2",
+        "x": -1.5,
+        "y": 0.0,
+        "z": 0.5,
+        "level": 2
+    },
+    {
+        "name": "floor.069_lev2",
+        "x": -0.5,
+        "y": 0.0,
+        "z": -0.5,
+        "level": 2
+    },
+    {
+        "name": "floor.070_lev2",
+        "x": -2.5,
+        "y": 0.0,
+        "z": 2.5,
+        "level": 2
+    },
+    {
+        "name": "floor.071_lev2",
+        "x": -1.5,
+        "y": 0.0,
+        "z": 1.5,
+        "level": 2
+    },
+    {
+        "name": "floor.072_lev2",
+        "x": -3.5,
+        "y": 0.0,
+        "z": -1.5,
+        "level": 2
+    },
+    {
+        "name": "floor.073_lev2",
+        "x": -4.5,
+        "y": 0.0,
+        "z": -2.5,
+        "level": 2
+    },
+    {
+        "name": "floor.074_lev2",
+        "x": -3.5,
+        "y": 0.0,
+        "z": -3.5,
+        "level": 2
+    },
+    {
+        "name": "floor.075_lev2",
+        "x": -3.5,
+        "y": 0.0,
+        "z": -4.5,
+        "level": 2
+    },
+    {
+        "name": "floor.076_lev2",
+        "x": -3.5,
+        "y": 0.0,
+        "z": 4.5,
+        "level": 2
+    },
+    {
+        "name": "floor.077_lev2",
+        "x": -3.5,
+        "y": 0.0,
+        "z": 3.5,
+        "level": 2
+    },
+    {
+        "name": "floor.078_lev2",
+        "x": -2.5,
+        "y": 0.0,
+        "z": 0.5,
+        "level": 2
+    },
+    {
+        "name": "floor.079_lev2",
+        "x": -2.5,
+        "y": 0.0,
+        "z": -0.5,
+        "level": 2
+    },
+    {
+        "name": "floor.080_lev2",
+        "x": -3.5,
+        "y": 0.0,
+        "z": 2.5,
+        "level": 2
+    },
+    {
+        "name": "floor.081_lev2",
+        "x": -2.5,
+        "y": 0.0,
+        "z": 1.5,
+        "level": 2
+    },
+    {
+        "name": "floor.082_lev2",
+        "x": -4.5,
+        "y": 0.0,
+        "z": -1.5,
+        "level": 2
+    },
+    {
+        "name": "floor.083_lev2",
+        "x": -3.5,
+        "y": 0.0,
+        "z": -2.5,
+        "level": 2
+    },
+    {
+        "name": "floor.084_lev2",
+        "x": -4.5,
+        "y": 0.0,
+        "z": -3.5,
+        "level": 2
+    },
+    {
+        "name": "floor.085_lev2",
+        "x": -4.5,
+        "y": 0.0,
+        "z": -4.5,
+        "level": 2
+    },
+    {
+        "name": "floor.086_lev2",
+        "x": -4.5,
+        "y": 0.0,
+        "z": 4.5,
+        "level": 2
+    },
+    {
+        "name": "floor.087_lev2",
+        "x": -4.5,
+        "y": 0.0,
+        "z": 3.5,
+        "level": 2
+    },
+    {
+        "name": "floor.088_lev2",
+        "x": -3.5,
+        "y": 0.0,
+        "z": 0.5,
+        "level": 2
+    },
+    {
+        "name": "floor.089_lev2",
+        "x": -3.5,
+        "y": 0.0,
+        "z": -0.5,
+        "level": 2
+    },
+    {
+        "name": "floor.090_lev2",
+        "x": -4.5,
+        "y": 0.0,
+        "z": 2.5,
+        "level": 2
+    },
+    {
+        "name": "floor.091_lev2",
+        "x": -3.5,
+        "y": 0.0,
+        "z": 1.5,
+        "level": 2
+    },
+    {
+        "name": "floor.092_lev2",
+        "x": 0.5,
+        "y": 0.0,
+        "z": -1.5,
+        "level": 2
+    },
+    {
+        "name": "floor.093_lev2",
+        "x": 0.5,
+        "y": 0.0,
+        "z": -2.5,
+        "level": 2
+    },
+    {
+        "name": "floor.094_lev2",
+        "x": 0.5,
+        "y": 0.0,
+        "z": -3.5,
+        "level": 2
+    },
+    {
+        "name": "floor.095_lev2",
+        "x": 0.5,
+        "y": 0.0,
+        "z": -4.5,
+        "level": 2
+    },
+    {
+        "name": "floor.096_lev2",
+        "x": 0.5,
+        "y": 0.0,
+        "z": 4.5,
+        "level": 2
+    },
+    {
+        "name": "floor.097_lev2",
+        "x": 0.5,
+        "y": 0.0,
+        "z": 3.5,
+        "level": 2
+    },
+    {
+        "name": "floor.098_lev2",
+        "x": -4.5,
+        "y": 0.0,
+        "z": 0.5,
+        "level": 2
+    },
+    {
+        "name": "floor.099_lev2",
+        "x": -4.5,
+        "y": 0.0,
+        "z": -0.5,
+        "level": 2
+    },
+    {
+        "name": "floor.100_lev2",
+        "x": 0.5,
+        "y": 0.0,
+        "z": 2.5,
+        "level": 2
+    },
+    {
+        "name": "floor.101_lev2",
+        "x": -4.5,
+        "y": 0.0,
+        "z": 1.5,
+        "level": 2
+    },
+    {
+        "name": "wall.004_lev2",
+        "x": -1.5,
+        "y": 0.0,
+        "z": -5.25,
+        "level": 2
+    },
+    {
+        "name": "wall.010_lev2",
+        "x": -2.5,
+        "y": 0.0,
+        "z": -5.25,
+        "level": 2
+    },
+    {
+        "name": "wall.011_lev2",
+        "x": -3.5,
+        "y": 0.0,
+        "z": -5.25,
+        "level": 2
+    },
+    {
+        "name": "wall.012_lev2",
+        "x": -4.5,
+        "y": 0.0,
+        "z": -5.25,
+        "level": 2
+    },
+    {
+        "name": "wall.013_lev2",
+        "x": 3.5,
+        "y": 0.0,
+        "z": -5.25,
+        "level": 2
+    },
+    {
+        "name": "wall.014_lev2",
+        "x": 4.5,
+        "y": 0.0,
+        "z": -5.25,
+        "level": 2
+    },
+    {
+        "name": "wall.006_lev2",
+        "x": -5.25,
+        "y": 0.0,
+        "z": -3.5,
+        "level": 2
+    },
+    {
+        "name": "wall.007_lev2",
+        "x": -5.25,
+        "y": 0.0,
+        "z": -2.5,
+        "level": 2
+    },
+    {
+        "name": "wall.015_lev2",
+        "x": -5.25,
+        "y": 0.0,
+        "z": -1.5,
+        "level": 2
+    },
+    {
+        "name": "wall.016_lev2",
+        "x": -5.25,
+        "y": 0.0,
+        "z": 0.5,
+        "level": 2
+    },
+    {
+        "name": "wall.017_lev2",
+        "x": -5.25,
+        "y": 0.0,
+        "z": 1.5,
+        "level": 2
+    },
+    {
+        "name": "wall.018_lev2",
+        "x": -5.25,
+        "y": 0.0,
+        "z": 2.5,
+        "level": 2
+    },
+    {
+        "name": "wall.019_lev2",
+        "x": -5.25,
+        "y": 0.0,
+        "z": 3.5,
+        "level": 2
+    },
+    {
+        "name": "wall.020_lev2",
+        "x": -5.25,
+        "y": 0.0,
+        "z": 4.5,
+        "level": 2
+    },
+    {
+        "name": "wall.021_lev2",
+        "x": -5.25,
+        "y": 0.0,
+        "z": -0.5,
+        "level": 2
+    },
+    {
+        "name": "wall.022_lev2",
+        "x": 5.25,
+        "y": 0.0,
+        "z": -4.5,
+        "level": 2
+    },
+    {
+        "name": "wall.023_lev2",
+        "x": 5.25,
+        "y": 0.0,
+        "z": -3.5,
+        "level": 2
+    },
+    {
+        "name": "wall.024_lev2",
+        "x": 5.25,
+        "y": 0.0,
+        "z": -2.5,
+        "level": 2
+    },
+    {
+        "name": "wall.025_lev2",
+        "x": 5.25,
+        "y": 0.0,
+        "z": -1.5,
+        "level": 2
+    },
+    {
+        "name": "wall.026_lev2",
+        "x": 5.25,
+        "y": 0.0,
+        "z": -0.5,
+        "level": 2
+    },
+    {
+        "name": "wall.027_lev2",
+        "x": 5.25,
+        "y": 0.0,
+        "z": 0.5,
+        "level": 2
+    },
+    {
+        "name": "wall.028_lev2",
+        "x": 5.25,
+        "y": 0.0,
+        "z": 1.5,
+        "level": 2
+    },
+    {
+        "name": "wall.029_lev2",
+        "x": 5.25,
+        "y": 0.0,
+        "z": 2.5,
+        "level": 2
+    },
+    {
+        "name": "wall.030_lev2",
+        "x": 5.25,
+        "y": 0.0,
+        "z": 3.5,
+        "level": 2
+    },
+    {
+        "name": "wall.031_lev2",
+        "x": 5.25,
+        "y": 0.0,
+        "z": 4.5,
+        "level": 2
+    },
+    {
+        "name": "wall.032_lev2",
+        "x": 4.5,
+        "y": 0.0,
+        "z": 5.25,
+        "level": 2
+    },
+    {
+        "name": "wall.033_lev2",
+        "x": 3.5,
+        "y": 0.0,
+        "z": 5.25,
+        "level": 2
+    },
+    {
+        "name": "wall.034_lev2",
+        "x": 2.5,
+        "y": 0.0,
+        "z": 5.25,
+        "level": 2
+    },
+    {
+        "name": "wall.035_lev2",
+        "x": 1.5,
+        "y": 0.0,
+        "z": 5.25,
+        "level": 2
+    },
+    {
+        "name": "wall.036_lev2",
+        "x": 0.5,
+        "y": 0.0,
+        "z": 5.25,
+        "level": 2
+    },
+    {
+        "name": "wall.037_lev2",
+        "x": -0.5,
+        "y": 0.0,
+        "z": 5.25,
+        "level": 2
+    },
+    {
+        "name": "wall.038_lev2",
+        "x": -1.5,
+        "y": 0.0,
+        "z": 5.25,
+        "level": 2
+    },
+    {
+        "name": "wall.039_lev2",
+        "x": -2.5,
+        "y": 0.0,
+        "z": 5.25,
+        "level": 2
+    },
+    {
+        "name": "wall.040_lev2",
+        "x": -3.5,
+        "y": 0.0,
+        "z": 5.25,
+        "level": 2
+    },
+    {
+        "name": "wall.041_lev2",
+        "x": -4.5,
+        "y": 0.0,
+        "z": 5.25,
+        "level": 2
+    },
+    {
+        "name": "wall-corner.005_lev2",
+        "x": 5.260000228881836,
+        "y": 0.0,
+        "z": 5.260000228881836,
+        "level": 2
+    },
+    {
+        "name": "gambling-machine.007_lev2",
+        "x": -3.75,
+        "y": 0.0,
+        "z": -2.25,
+        "level": 2
+    },
+    {
+        "name": "gambling-machine.008_lev2",
+        "x": -3.75,
+        "y": 0.0,
+        "z": -4.75,
+        "level": 2
+    },
+    {
+        "name": "gambling-machine.009_lev2",
+        "x": -3.75,
+        "y": 0.0,
+        "z": -4.25,
+        "level": 2
+    },
+    {
+        "name": "gambling-machine.010_lev2",
+        "x": -3.75,
+        "y": 0.0,
+        "z": -3.25,
+        "level": 2
+    },
+    {
+        "name": "gambling-machine.011_lev2",
+        "x": -3.75,
+        "y": 0.0,
+        "z": -3.75,
+        "level": 2
+    },
+    {
+        "name": "gambling-machine.012_lev2",
+        "x": -3.75,
+        "y": 0.0,
+        "z": -2.75,
+        "level": 2
+    },
+    {
+        "name": "gambling-machine.013_lev2",
+        "x": -3.25,
+        "y": 0.0,
+        "z": -2.25,
+        "level": 2
+    },
+    {
+        "name": "gambling-machine.014_lev2",
+        "x": -3.25,
+        "y": 0.0,
+        "z": -4.75,
+        "level": 2
+    },
+    {
+        "name": "gambling-machine.015_lev2",
+        "x": -3.25,
+        "y": 0.0,
+        "z": -4.25,
+        "level": 2
+    },
+    {
+        "name": "gambling-machine.016_lev2",
+        "x": -3.25,
+        "y": 0.0,
+        "z": -3.25,
+        "level": 2
+    },
+    {
+        "name": "gambling-machine.017_lev2",
+        "x": -3.25,
+        "y": 0.0,
+        "z": -3.75,
+        "level": 2
+    },
+    {
+        "name": "gambling-machine.018_lev2",
+        "x": -3.25,
+        "y": 0.0,
+        "z": -2.75,
+        "level": 2
+    },
+    {
+        "name": "gambling-machine.019_lev2",
+        "x": -1.75,
+        "y": 0.0,
+        "z": -2.75,
+        "level": 2
+    },
+    {
+        "name": "gambling-machine.020_lev2",
+        "x": -1.75,
+        "y": 0.0,
+        "z": -3.75,
+        "level": 2
+    },
+    {
+        "name": "gambling-machine.021_lev2",
+        "x": -1.75,
+        "y": 0.0,
+        "z": -3.25,
+        "level": 2
+    },
+    {
+        "name": "gambling-machine.022_lev2",
+        "x": -1.75,
+        "y": 0.0,
+        "z": -4.25,
+        "level": 2
+    },
+    {
+        "name": "gambling-machine.023_lev2",
+        "x": -1.75,
+        "y": 0.0,
+        "z": -4.75,
+        "level": 2
+    },
+    {
+        "name": "gambling-machine.024_lev2",
+        "x": -1.75,
+        "y": 0.0,
+        "z": -2.25,
+        "level": 2
+    },
+    {
+        "name": "gambling-machine.025_lev2",
+        "x": -2.25,
+        "y": 0.0,
+        "z": -2.75,
+        "level": 2
+    },
+    {
+        "name": "gambling-machine.026_lev2",
+        "x": -2.25,
+        "y": 0.0,
+        "z": -3.75,
+        "level": 2
+    },
+    {
+        "name": "gambling-machine.027_lev2",
+        "x": -2.25,
+        "y": 0.0,
+        "z": -3.25,
+        "level": 2
+    },
+    {
+        "name": "gambling-machine.028_lev2",
+        "x": -2.25,
+        "y": 0.0,
+        "z": -4.25,
+        "level": 2
+    },
+    {
+        "name": "gambling-machine.029_lev2",
+        "x": -2.25,
+        "y": 0.0,
+        "z": -4.75,
+        "level": 2
+    },
+    {
+        "name": "gambling-machine.030_lev2",
+        "x": -2.25,
+        "y": 0.0,
+        "z": -2.25,
+        "level": 2
+    },
+    {
+        "name": "basketball-game.002_lev2",
+        "x": 0.5,
+        "y": 0.0,
+        "z": -4.5,
+        "level": 2
+    },
+    {
+        "name": "basketball-game.003_lev2",
+        "x": -0.5,
+        "y": 0.0,
+        "z": -4.5,
+        "level": 2
+    },
+    {
+        "name": "arcade-machine.002_lev2",
+        "x": 2.0,
+        "y": 0.0,
+        "z": -4.75,
+        "level": 2
+    },
+    {
+        "name": "arcade-machine.003_lev2",
+        "x": 2.5,
+        "y": 0.0,
+        "z": -4.75,
+        "level": 2
+    },
+    {
+        "name": "arcade-machine.004_lev2",
+        "x": 3.0,
+        "y": 0.0,
+        "z": -4.75,
+        "level": 2
+    },
+    {
+        "name": "pinball.002_lev2",
+        "x": 4.5,
+        "y": 0.0,
+        "z": -4.650000095367432,
+        "level": 2
+    },
+    {
+        "name": "claw-machine.001_lev2",
+        "x": 0.5,
+        "y": 0.0,
+        "z": -2.5,
+        "level": 2
+    },
+    {
+        "name": "vending-machine.001_lev2",
+        "x": -4.75,
+        "y": 0.0,
+        "z": -0.5,
+        "level": 2
+    },
+    {
+        "name": "claw-machine.002_lev2",
+        "x": 1.5,
+        "y": 0.0,
+        "z": -2.5,
+        "level": 2
+    },
+    {
+        "name": "claw-machine.003_lev2",
+        "x": 2.5,
+        "y": 0.0,
+        "z": -2.5,
+        "level": 2
+    },
+    {
+        "name": "claw-machine.004_lev2",
+        "x": 3.5,
+        "y": 0.0,
+        "z": -2.5,
+        "level": 2
+    },
+    {
+        "name": "vending-machine.002_lev2",
+        "x": -4.75,
+        "y": 0.0,
+        "z": -1.25,
+        "level": 2
+    },
+    {
+        "name": "arcade-machine_lev2",
+        "x": 1.5,
+        "y": 0.0,
+        "z": -4.75,
+        "level": 2
+    },
+    {
+        "name": "floor.002_lev2",
+        "x": 0.5,
+        "y": 0.0,
+        "z": 1.5,
+        "level": 2
+    },
+    {
+        "name": "floor.004_lev2",
+        "x": 1.5,
+        "y": 0.0,
+        "z": 2.5,
+        "level": 2
+    },
+    {
+        "name": "floor.006_lev2",
+        "x": 0.5,
+        "y": 0.0,
+        "z": -0.5,
+        "level": 2
+    },
+    {
+        "name": "floor.007_lev2",
+        "x": 0.5,
+        "y": 0.0,
+        "z": 0.5,
+        "level": 2
+    },
+    {
+        "name": "pinball.001_lev2",
+        "x": 3.75,
+        "y": 0.0,
+        "z": -4.650000095367432,
+        "level": 2
+    },
+    {
+        "name": "basketball-game.001_lev2",
+        "x": -0.5,
+        "y": 0.0,
+        "z": -4.5,
+        "level": 2
+    },
+    {
+        "name": "wall.002_lev2",
+        "x": -0.5,
+        "y": 0.0,
+        "z": -5.25,
+        "level": 2
+    },
+    {
+        "name": "wall.003_lev2",
+        "x": 0.5,
+        "y": 0.0,
+        "z": -5.25,
+        "level": 2
+    },
+    {
+        "name": "wall-corner.002_lev2",
+        "x": 5.260000228881836,
+        "y": 0.0,
+        "z": -5.260000228881836,
+        "level": 2
+    },
+    {
+        "name": "wall-corner.003_lev2",
+        "x": -5.260000228881836,
+        "y": 0.0,
+        "z": -5.260000228881836,
+        "level": 2
+    },
+    {
+        "name": "gambling-machine.001_lev2",
+        "x": -4.75,
+        "y": 0.0,
+        "z": -2.75,
+        "level": 2
+    },
+    {
+        "name": "gambling-machine.002_lev2",
+        "x": -4.75,
+        "y": 0.0,
+        "z": -3.75,
+        "level": 2
+    },
+    {
+        "name": "gambling-machine.003_lev2",
+        "x": -4.75,
+        "y": 0.0,
+        "z": -3.25,
+        "level": 2
+    },
+    {
+        "name": "gambling-machine.004_lev2",
+        "x": -4.75,
+        "y": 0.0,
+        "z": -4.25,
+        "level": 2
+    },
+    {
+        "name": "gambling-machine.005_lev2",
+        "x": -4.75,
+        "y": 0.0,
+        "z": -4.75,
+        "level": 2
+    },
+    {
+        "name": "gambling-machine.006_lev2",
+        "x": -4.75,
+        "y": 0.0,
+        "z": -2.25,
+        "level": 2
+    },
+    {
+        "name": "wall.005_lev2",
+        "x": -5.25,
+        "y": 0.0,
+        "z": -4.5,
+        "level": 2
+    },
+    {
+        "name": "wall-corner.004_lev2",
+        "x": -5.260000228881836,
+        "y": 0.0,
+        "z": 5.260000228881836,
+        "level": 2
+    }
+]
