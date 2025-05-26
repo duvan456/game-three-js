@@ -20,6 +20,21 @@ export const sources = [
         "path": "/models/toycar2/arcade-machine_lev2.glb"
     },
     {
+        "name": "ball.001_lev2",
+        "type": "gltfModel",
+        "path": "/models/toycar2/ball.001_lev2.glb"
+    },
+    {
+        "name": "ball.002_lev2",
+        "type": "gltfModel",
+        "path": "/models/toycar2/ball.002_lev2.glb"
+    },
+    {
+        "name": "ball_lev2",
+        "type": "gltfModel",
+        "path": "/models/toycar2/ball_lev2.glb"
+    },
+    {
         "name": "basketball-game.001_lev2",
         "type": "gltfModel",
         "path": "/models/toycar2/basketball-game.001_lev2.glb"
@@ -33,6 +48,16 @@ export const sources = [
         "name": "basketball-game.003_lev2",
         "type": "gltfModel",
         "path": "/models/toycar2/basketball-game.003_lev2.glb"
+    },
+    {
+        "name": "cash-register.001_lev2",
+        "type": "gltfModel",
+        "path": "/models/toycar2/cash-register.001_lev2.glb"
+    },
+    {
+        "name": "cash-register_lev2",
+        "type": "gltfModel",
+        "path": "/models/toycar2/cash-register_lev2.glb"
     },
     {
         "name": "claw-machine.001_lev2",
@@ -53,6 +78,36 @@ export const sources = [
         "name": "claw-machine.004_lev2",
         "type": "gltfModel",
         "path": "/models/toycar2/claw-machine.004_lev2.glb"
+    },
+    {
+        "name": "dance-machine.001_lev2",
+        "type": "gltfModel",
+        "path": "/models/toycar2/dance-machine.001_lev2.glb"
+    },
+    {
+        "name": "dance-machine.002_lev2",
+        "type": "gltfModel",
+        "path": "/models/toycar2/dance-machine.002_lev2.glb"
+    },
+    {
+        "name": "dance-machine.003_lev2",
+        "type": "gltfModel",
+        "path": "/models/toycar2/dance-machine.003_lev2.glb"
+    },
+    {
+        "name": "door-left.001_lev2",
+        "type": "gltfModel",
+        "path": "/models/toycar2/door-left.001_lev2.glb"
+    },
+    {
+        "name": "door-right.001_lev2",
+        "type": "gltfModel",
+        "path": "/models/toycar2/door-right.001_lev2.glb"
+    },
+    {
+        "name": "floor.001_lev2",
+        "type": "gltfModel",
+        "path": "/models/toycar2/floor.001_lev2.glb"
     },
     {
         "name": "floor.002_lev2",
@@ -555,6 +610,11 @@ export const sources = [
         "path": "/models/toycar2/floor.101_lev2.glb"
     },
     {
+        "name": "floor.104_lev2",
+        "type": "gltfModel",
+        "path": "/models/toycar2/floor.104_lev2.glb"
+    },
+    {
         "name": "gambling-machine.001_lev2",
         "type": "gltfModel",
         "path": "/models/toycar2/gambling-machine.001_lev2.glb"
@@ -705,6 +765,11 @@ export const sources = [
         "path": "/models/toycar2/gambling-machine.030_lev2.glb"
     },
     {
+        "name": "group.001_lev2",
+        "type": "gltfModel",
+        "path": "/models/toycar2/group.001_lev2.glb"
+    },
+    {
         "name": "pinball.001_lev2",
         "type": "gltfModel",
         "path": "/models/toycar2/pinball.001_lev2.glb"
@@ -713,6 +778,41 @@ export const sources = [
         "name": "pinball.002_lev2",
         "type": "gltfModel",
         "path": "/models/toycar2/pinball.002_lev2.glb"
+    },
+    {
+        "name": "prizes.001_lev2",
+        "type": "gltfModel",
+        "path": "/models/toycar2/prizes.001_lev2.glb"
+    },
+    {
+        "name": "prizes_lev2",
+        "type": "gltfModel",
+        "path": "/models/toycar2/prizes_lev2.glb"
+    },
+    {
+        "name": "rotate-y.001_lev2",
+        "type": "gltfModel",
+        "path": "/models/toycar2/rotate-y.001_lev2.glb"
+    },
+    {
+        "name": "rotate-z.001_lev2",
+        "type": "gltfModel",
+        "path": "/models/toycar2/rotate-z.001_lev2.glb"
+    },
+    {
+        "name": "rotate-z.002_lev2",
+        "type": "gltfModel",
+        "path": "/models/toycar2/rotate-z.002_lev2.glb"
+    },
+    {
+        "name": "ticket-machine.001_lev2",
+        "type": "gltfModel",
+        "path": "/models/toycar2/ticket-machine.001_lev2.glb"
+    },
+    {
+        "name": "ticket-machine.002_lev2",
+        "type": "gltfModel",
+        "path": "/models/toycar2/ticket-machine.002_lev2.glb"
     },
     {
         "name": "vending-machine.001_lev2",
@@ -743,6 +843,16 @@ export const sources = [
         "name": "wall-corner.005_lev2",
         "type": "gltfModel",
         "path": "/models/toycar2/wall-corner.005_lev2.glb"
+    },
+    {
+        "name": "wall-door-rotate_lev2",
+        "type": "gltfModel",
+        "path": "/models/toycar2/wall-door-rotate_lev2.glb"
+    },
+    {
+        "name": "wall.001_lev2",
+        "type": "gltfModel",
+        "path": "/models/toycar2/wall.001_lev2.glb"
     },
     {
         "name": "wall.002_lev2",
@@ -943,5 +1053,10 @@ export const sources = [
         "name": "wall.041_lev2",
         "type": "gltfModel",
         "path": "/models/toycar2/wall.041_lev2.glb"
+    },
+    {
+        "name": "wall_lev2",
+        "type": "gltfModel",
+        "path": "/models/toycar2/wall_lev2.glb"
     }
 ];
