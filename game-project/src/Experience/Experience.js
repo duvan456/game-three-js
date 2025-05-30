@@ -184,7 +184,7 @@ export default class Experience {
 
     this.time.on('tick', () => {
       if (!this.renderer.instance.xr.isPresenting) {
-        const delta = this.time.delta * 0.001
+        const delta = this.time.delta * 0.003
         this.update(delta)
       }
     })
@@ -295,6 +295,10 @@ export default class Experience {
     this.isThirdPerson = true // ⬅️ asegurar el modo
     this.tracker.start()
     this._startObstacleWaves()
+    
+    // Mostrar nivel inicial en el HUD
+    this.menu.setStatus(`🎮 Nivel 1 | 🎖️ Puntos: 0`);
+    
     if (this.menu && this.menu.toggleButton && this.menu.toggleButton.style) {
       this.menu.toggleButton.style.display = 'block'
     }
@@ -363,8 +367,62 @@ export default class Experience {
     this.tracker = new GameTracker({ modal: this.modal, menu: this.menu });
     this.tracker.start();
 
+    // Resetear HUD al nivel 1
+    this.menu.setStatus(`🎮 Nivel 1 | 🎖️ Puntos: 0`);
+
     console.log('✅ Juego reiniciado en nivel 1.');
   }
 
+  handleLevelCompletion(level) {
+    console.log(`🎯 Nivel ${level} completado!`);
+    
+    if (level === 1) {
+        // Primero resetear la posición del robot
+        if (this.world.robot && this.world.robot.group) {
+            // Resetear posición visual
+            this.world.robot.group.position.set(0, 1.2, 0);
+            
+            // Resetear física del robot
+            if (this.world.robot.body) {
+                this.world.robot.body.position.set(0, 1.2, 0);
+                this.world.robot.body.velocity.setZero();
+                this.world.robot.body.angularVelocity.setZero();
+                this.world.robot.body.quaternion.setFromEuler(0, 0, 0);
+                this.world.robot.body.wakeUp();
+            }
+        }
 
+        // Limpiar escena actual
+        this.world.clearCurrentScene();
+        
+        // Cargar nivel 2 con un pequeño delay para asegurar la limpieza
+        setTimeout(() => {
+            this.world.loadLevel(2);
+            
+            // Actualizar HUD con el nuevo nivel
+            this.menu.setStatus(`🎮 Nivel 2 | 🎖️ Puntos: 0`);
+            
+            // Verificación adicional de posición después de cargar
+            if (this.world.robot && this.world.robot.group) {
+                this.world.robot.group.position.set(0, 1.2, 0);
+                if (this.world.robot.body) {
+                    this.world.robot.body.position.set(0, 1.2, 0);
+                }
+            }
+        }, 100);
+        
+    } else if (level === 2) {
+        // Mostrar mensaje de victoria final
+        this.modal.show({
+            icon: '🏆',
+            message: '¡Felicitaciones!\n¡Has completado todos los niveles!',
+            buttons: [
+                {
+                    text: '🔄 Jugar de nuevo',
+                    onClick: () => this.resetGameToFirstLevel()
+                }
+            ]
+        });
+    }
+}
 }

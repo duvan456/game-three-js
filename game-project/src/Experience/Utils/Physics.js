@@ -11,19 +11,24 @@ export default class Physics {
         this.world.broadphase = new CANNON.SAPBroadphase(this.world)
         this.world.allowSleep = true
 
-        // ✅ Material por defecto
-        this.defaultMaterial = new CANNON.Material('default')
+        // Crear material por defecto para el mundo
+        const defaultMaterial = new CANNON.Material('default')
+        const robotMaterial = new CANNON.Material('robot')
 
-        const defaultContact = new CANNON.ContactMaterial(
-            this.defaultMaterial,
-            this.defaultMaterial,
+        // Configurar el contacto entre materiales
+        const contactMaterial = new CANNON.ContactMaterial(
+            defaultMaterial,
+            robotMaterial,
             {
-                friction: 0.4,
-                restitution: 0.0
+                friction: 0.5,        // Más fricción para mejor control
+                restitution: 0.0,     // Sin rebote
+                contactEquationStiffness: 1e6,    // Mayor rigidez en contactos
+                contactEquationRelaxation: 3      // Menor relajación
             }
         )
-        this.world.defaultContactMaterial = defaultContact
-        this.world.addContactMaterial(defaultContact)
+
+        // Agregar el material de contacto al mundo
+        this.world.addContactMaterial(contactMaterial)
 
         // ✅ Materiales personalizados
         this.robotMaterial = new CANNON.Material('robot')

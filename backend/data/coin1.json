@@ -1,17 +1,29 @@
 [
     {
-        "name": "coin_structure_detailed_lev2",
-        "x": 25,
-        "y": 1,
-        "z": 38,
-        "level": 2
+        "name": "ticket-coin_lev2",
+        "x": 0.0,
+        "y": 2,
+        "z": 5.0,
+        "level": 2,
+        "role": "default"
+    },
+
+    {
+        "name": "ticket-coin_lev2",
+        "x": 0.0,
+        "y": 2,
+        "z": 10.0,
+        "level": 2,
+        "role": "default"
+        
     },
     {
-        "name": "coin_structure_detailed_lev2",
-        "x": 16,
-        "y": 1,
-        "z": -39,
-        "level": 2
+        "name": "ticket-coin-final_lev2",
+        "x": 2.821316719055176,
+        "y": 2.0,
+        "z": 36.276451110839844,
+        "level": 2,
+        "role": "finalprize"
+        
     }
-
 ]

@@ -79,9 +79,9 @@ export default class Robot {
         this.animation.actions = {}
         this.animation.actions.dance = this.animation.mixer.clipAction(this.resources.items.robotModel.animations[0])
         this.animation.actions.death = this.animation.mixer.clipAction(this.resources.items.robotModel.animations[1])
-        this.animation.actions.idle = this.animation.mixer.clipAction(this.resources.items.robotModel.animations[2])
-        this.animation.actions.jump = this.animation.mixer.clipAction(this.resources.items.robotModel.animations[3])
-        this.animation.actions.walking = this.animation.mixer.clipAction(this.resources.items.robotModel.animations[10])
+        this.animation.actions.idle = this.animation.mixer.clipAction(this.resources.items.robotModel.animations[3])
+        this.animation.actions.jump = this.animation.mixer.clipAction(this.resources.items.robotModel.animations[8])
+        this.animation.actions.walking = this.animation.mixer.clipAction(this.resources.items.robotModel.animations[11])
 
         this.animation.actions.current = this.animation.actions.idle
         this.animation.actions.current.play()

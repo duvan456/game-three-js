@@ -10,6 +10,8 @@ import Sound from './Sound.js'
 import AmbientSound from './AmbientSound.js'
 import MobileControls from '../../controls/MobileControls.js'
 import LevelManager from './LevelManager.js';
+import * as CANNON from 'cannon-es' // Añadir esta importación
+import Prize from './Prize.js'  // Añadir esta línea
 
 
 
@@ -84,46 +86,87 @@ export default class World {
         }
 
         // Gira premios
-        this.loader?.prizes?.forEach(p => p.update(delta))
-
-
-        // Lógica de recogida
-        if (!this.allowPrizePickup || !this.loader || !this.robot) return
-
-        const pos = this.robot.body.position
-        const speed = this.robot.body.velocity.length()
-        const moved = speed > 0.5
-
-        this.loader.prizes.forEach((prize, idx) => {
+        this.loader?.prizes?.forEach((prize, idx) => {
             if (prize.collected || !prize.pivot) return
 
-            const dist = prize.pivot.position.distanceTo(pos)
-            if (dist < 1.2 && moved) {
+            const pos = this.robot.body.position
+            let dist;
+
+            // Comprobar distancia usando la posición correcta
+            if (prize.body) {
+                dist = prize.body.position.distanceTo(pos)
+            } else {
+                dist = prize.pivot.position.distanceTo(new THREE.Vector3(pos.x, pos.y, pos.z))
+            }
+
+            if (dist < 1.2) {
                 prize.collect()
                 this.loader.prizes.splice(idx, 1)
 
-                // ✅ Incrementar puntos
+                // Incrementar puntos
                 this.points = (this.points || 0) + 1
                 this.robot.points = this.points
 
-                const pointsTarget = this.levelManager.getCurrentLevelTargetPoints(); // 📈 Nivel actual
-
-                console.log(`🎯 Monedas recolectadas: ${this.points} / ${pointsTarget}`);
-
-
-                // 🧹 Limpiar obstáculos
-                if (this.experience.raycaster?.removeRandomObstacles) {
-                    const reduction = 0.2 + Math.random() * 0.1
-                    this.experience.raycaster.removeRandomObstacles(reduction)
-                }
-
+                // Sonido
                 if (window.userInteracted) {
                     this.coinSound.play()
                 }
-                this.experience.menu.setStatus?.(`🎖️ Puntos: ${this.points}`)
-                // console.log(`🟡 Premio recogido. Total: ${this.points}`)
+
+                // Actualizar HUD
+                this.experience.menu.setStatus(
+                    `🎮 Nivel ${this.levelManager.currentLevel} | 🎖️ Puntos: ${this.points}`
+                )
+
+                // Verificar si es moneda final
+                if (prize.model.name === 'ticket-coin-final_lev2') {
+                    this.experience.handleLevelCompletion(2)
+                }
             }
         })
+
+
+        // Lógica unificada de recolección de monedas
+        if (this.allowPrizePickup && this.loader && this.robot) {
+            this.loader.prizes.forEach((prize, idx) => {
+                if (prize.collected || !prize.pivot) return
+
+                const pos = this.robot.body.position
+                const prizePos = prize.body ? prize.body.position : prize.pivot.position
+                
+                // Calcular distancia en 3D
+                const dist = new THREE.Vector3(pos.x, pos.y, pos.z)
+                    .distanceTo(new THREE.Vector3(prizePos.x, prizePos.y, prizePos.z))
+
+                // Radio de colección aumentado
+                if (dist < 2.0) {
+                    console.log(`🎯 Recogiendo moneda: ${prize.model.name} a distancia: ${dist}`);
+                    
+                    prize.collect()
+                    this.loader.prizes.splice(idx, 1)
+
+                    // Incrementar puntos
+                    this.points = (this.points || 0) + 1
+                    this.robot.points = this.points
+
+                    // Sonido
+                    if (window.userInteracted) {
+                        this.coinSound.play()
+                    }
+
+                    // Actualizar HUD
+                    this.experience.menu.setStatus(
+                        `🎮 Nivel ${this.levelManager.currentLevel} | 🎖️ Puntos: ${this.points}`
+                    )
+
+                    // Verificar si es moneda final
+                    if (prize.model.name.includes('final')) {
+                        if (this.levelManager.currentLevel === 2) {
+                            this.experience.handleLevelCompletion(2)
+                        }
+                    }
+                }
+            })
+        }
 
         // ✅ Evaluar fuera del bucle de premios
         if (this.points === 2 && !this.experience.tracker.finished) {
@@ -158,13 +201,87 @@ export default class World {
 
     async loadLevel(level) {
         try {
+            // Limpiar premios existentes
+            if (this.loader && this.loader.prizes) {
+                this.loader.prizes.forEach(prize => {
+                    if (prize.body && this.experience.physics) {
+                        this.experience.physics.world.removeBody(prize.body);
+                    }
+                    if (prize.pivot) {
+                        this.scene.remove(prize.pivot);
+                    }
+                });
+                this.loader.prizes = [];
+            }
+
+            // Cargar nuevos datos
             const backendUrl = import.meta.env.VITE_BACKEND_URL || 'http://localhost:3001';
             const apiUrl = `${backendUrl}/api/blocks?level=${level}`;
+            
+            const response = await fetch(apiUrl, {
+                cache: 'no-cache'
+            });
+            const data = await response.json();
+            
+            console.log('🎯 Datos cargados:', data);
 
-            // 🔵 Usar el nuevo método de ToyCarLoader
+            // Filtrar solo las monedas del nivel actual
+            const coins = data.filter(item => 
+                item.name && 
+                (item.name.includes('coin') || item.name.includes('ticket-coin')) && 
+                item.level === level
+            );
+
+            console.log(`💰 Monedas encontradas para nivel ${level}:`, coins);
+
+            // Asegurar que el robot esté en la posición correcta
+            if (this.robot) {
+                this.robot.group.position.set(0, 1.2, 0);
+                if (this.robot.body) {
+                    this.robot.body.position.set(0, 1.2, 0);
+                    this.robot.body.velocity.setZero();
+                    this.robot.body.angularVelocity.setZero();
+                }
+            }
+
+            // Cargar elementos del nivel
             await this.loader.loadFromURL(apiUrl);
 
-            console.log(`✅ Nivel ${level} cargado.`);
+            // Crear los premios con física
+            coins.forEach(coinData => {
+                const model = this.resources.items[coinData.name];
+                
+                if (!model) {
+                    console.error(`❌ No se encontró el modelo para: ${coinData.name}`);
+                    console.log('📦 Modelos disponibles:', Object.keys(this.resources.items));
+                    return;
+                }
+
+                console.log(`🔍 Cargando moneda "${coinData.name}"...`);
+
+                try {
+                    const prize = new Prize({
+                        model: model,
+                        position: new THREE.Vector3(coinData.x, coinData.y, coinData.z),
+                        scene: this.scene,
+                        physics: this.experience.physics,
+                        role: coinData.role || 'default'
+                    });
+                    
+                    if (prize.model) {
+                        this.loader.prizes.push(prize);
+                        console.log(`✅ Moneda "${coinData.name}" cargada correctamente`);
+                    }
+                } catch (error) {
+                    console.error(`❌ Error creando premio para ${coinData.name}:`, error);
+                }
+            });
+
+            console.log(`🔍 Monedas cargadas para nivel ${level}:`, this.loader.prizes.length);
+
+            // Actualizar HUD al cargar el nivel
+            this.experience.menu.setStatus(`🎮 Nivel ${level} | 🎖️ Puntos: ${this.points || 0}`);
+
         } catch (error) {
             console.error('❌ Error cargando nivel:', error);
         }
@@ -251,25 +368,36 @@ export default class World {
             console.log(`🎯 Cuerpos físicos actuales en Physics World: ${physicsBodiesRemaining}`);
         }
 
+        // Limpiar monedas
         if (this.loader && this.loader.prizes.length > 0) {
             this.loader.prizes.forEach(prize => {
-                if (prize.model) {
-                    this.scene.remove(prize.model);
-                    if (prize.model.geometry) prize.model.geometry.dispose();
-                    if (prize.model.material) {
-                        if (Array.isArray(prize.model.material)) {
-                            prize.model.material.forEach(mat => mat.dispose());
-                        } else {
-                            prize.model.material.dispose();
-                        }
-                    }
+                if (prize.body && this.experience.physics) {
+                    this.experience.physics.world.removeBody(prize.body)
                 }
-            });
-            this.loader.prizes = []; // 🔵 Limpiar lista de premios
-            console.log('🎯 Premios del nivel anterior eliminados correctamente.');
+                if (prize.pivot) {
+                    this.scene.remove(prize.pivot)
+                }
+            })
+            this.loader.prizes = []
+            console.log('🎯 Premios del nivel anterior eliminados correctamente')
         }
 
 
+    }
+
+    handleCoinCollision(coin) {
+        if (!coin || !coin.userData) return;
+
+        // Detectar si es una moneda final
+        if (coin.name === 'ticket-coin-final_lev2') {
+            this.experience.handleLevelCompletion(2);
+        } else if (coin.name === 'ticket-coin-final_lev1') {
+            this.experience.handleLevelCompletion(1);
+        } else {
+            // Manejo normal de monedas
+            this.points++;
+            // ... resto del código de manejo de monedas
+        }
     }
 
 
